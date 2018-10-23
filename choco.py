@@ -1,4 +1,3 @@
-# -*- coding: cp1252 -*-
 import subprocess
 import time
 from subprocess import check_output
