@@ -1,6 +1,12 @@
 import subprocess
 import time
 from subprocess import check_output
+from __future__ import print_function
+from googleapiclient.discovery import build
+from httplib2 import Http
+from oauth2client import file, client, tools
+
+
 
 #Declarando Variaveis
 programas = []
@@ -116,25 +122,4 @@ if option == 4:
         print ("Os seguintes programas estão sendo instalados: " + chocoinstall3)
         chocoinstall2 = ("choco install "+ chocoinstall +" -y")
         subprocess.call(chocoinstall2, creationflags=CREATE_NO_WINDOW)
-
-
-#DNS
-
-#DNS Windows 7
-
-#DESATIVA ATUALIZAÇÃO
-print("Desativando Atualizações Automaticas do Windows")
-
-#DESATIVA WINDOWS DEFENDER
-print("Desativando Windows Defender")
-
-#DESATIVA WINDOWS FIREWALL
-print("Desativando Firewall do Windows")
-
-#Informa na tela e instala programas
-
-print ("Configuracoes e Instalacoes Concluidas")
-
-
-
 
